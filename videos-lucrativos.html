@@ -352,72 +352,6 @@
           }
       }
    </script>
-   <script>
-      ( function() {
-      
-        var youtube = document.querySelectorAll( ".lazy-youtube" );
-        
-        for (var i = 0; i < youtube.length; i++) {
-          
-          var source = "assets/img/"+ youtube[i].dataset.embed +".webp";
-            
-          var image = new Image();
-              image.src = source;
-              image.addEventListener( "load", function() {
-                youtube[ i ].appendChild( image );
-              }( i ) );
-          
-              youtube[i].addEventListener( "click", function() {
-      
-                var iframe = document.createElement( "iframe" );
-      
-                    iframe.setAttribute( "allow", "autoplay" );
-                    iframe.setAttribute( "frameborder", "0" );
-                    iframe.setAttribute( "allowfullscreen", "" );
-                    iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1&controls=0" );
-      
-                    this.innerHTML = "";
-                    this.appendChild( iframe );
-              } );	
-        };
-        
-      } )();
-   </script>
-   <script>
-      document.addEventListener("contextmenu", function (e){
-          e.preventDefault();
-      }, false);
-      </script>
-      
-      <script>
-      document.onkeypress = function (event) {
-      event = (event || window.event);
-      if (event.keyCode == 123) {return false;}
-      if (event.keyCode == 93) {return false;}
-      if (event.keyCode == 85) {return false;}
-      if (event.keyCode == 80) {return false;}
-      if (event.keyCode == 44) {return false;}
-      if (event.keyCode == 73) {return false;}
-      }
-      document.onmousedown = function (event) {
-      event = (event || window.event);
-      if (event.keyCode == 123) {return false;}
-      if (event.keyCode == 93) {return false;}
-      if (event.keyCode == 85) {return false;}
-      if (event.keyCode == 80) {return false;}
-      if (event.keyCode == 44) {return false;}
-      if (event.keyCode == 73) {return false;}
-      }
-      document.onkeydown = function (event) {
-      event = (event || window.event);
-      if (event.keyCode == 123) {return false;}
-      if (event.keyCode == 93) {return false;}
-      if (event.keyCode == 85) {return false;}
-      if (event.keyCode == 80) {return false;}
-      if (event.keyCode == 44) {return false;}
-      if (event.keyCode == 73) {return false;}
-      }
-      </script>
       <!-- data de hoje <div id="descounttime"></div> -->
       <script language="javascript">
       var getdayNames = new Array("domingo", "segunda-Feira", "terça-feira", "quarta-feira","quinta-feira", "sexta-feira", "sábado");
@@ -435,7 +369,7 @@
          <p class="center"><a href="termos-de-uso.html">Termos de Uso </a>| <a href="politicas-de-privacidade.html">Política de Privacidade </a></p>
          <p class="center">Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais.</p>
          <p class="center">*Resultados podem variar de pessoa para pessoa.</p>
-         <p class="center">Se você tiver alguma dúvida, sinta-se à vontade para usar o e-mail de contato e falar conosco em horário comercial de Segunda a Sextas das 09h00 às 18h00. Lemos e respondemos todas as mensagens por ordem de chegada.</p>
+         <p class="center">Se você tiver alguma dúvida, sinta-se à vontade para usar o e-mail de contato e falar conosco em horário comercial de Segunda a Sexta das 09h00 às 18h00. Lemos e respondemos todas as mensagens por ordem de chegada.</p>
          <p class="center">CNPJ: 09.661.473/0001-04 - contato@ganhandonline.site</p>
       </div>
    </footer>
